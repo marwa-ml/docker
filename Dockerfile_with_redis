@@ -1,0 +1,6 @@
+FROM python:3.8
+COPY . /app
+EXPOSE 5000
+WORKDIR /app 
+RUN pip install pandas scikit-learn flask 
+CMD python ./app.py
